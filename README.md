@@ -1,3 +1,6 @@
-# flutter_food_express
+# Projeto desenvolvido em Sala de Aula
 
-A new Flutter project.
+## Pacotes a serem instalados
+1. flutter pub add sqflite
+2. flutter pub add sqflite_common_ffi
+3. flutter pub add path
