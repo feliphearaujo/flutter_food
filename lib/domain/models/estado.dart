@@ -12,8 +12,7 @@ class Estado {
     this.ufibge,
     this.uf,
     this.nome,
-  });
-    
+  });   
   
 
   Estado copyWith({
