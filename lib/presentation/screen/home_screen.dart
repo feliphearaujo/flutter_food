@@ -33,8 +33,19 @@ class HomeScreen extends StatelessWidget {
             leading: const Icon( Icons.people ),
             onTap: () {
                 //Fecha o menu
+                _selectedIndex = 0;
                 Navigator.pop(context);
             },
+        ),
+        ListTile( 
+          title: const Text("Estado"),
+          selected: _selectedIndex == 1,
+          leading: const Icon(Icons.abc),
+          onTap: () {
+            _selectedIndex = 1;
+            Navigator.pop(context);
+          },
+
         )
 
       ],
