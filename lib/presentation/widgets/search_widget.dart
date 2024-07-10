@@ -12,7 +12,7 @@ class SearchWidget extends StatelessWidget {
       appBar: AppBar(     
         title: Text(title),        
       ),
-      body: Container(), 
+      body: _body(context), 
       floatingActionButton:
       // Botão de cadastro 
           FloatingActionButton(child: const Icon(Icons.add),
@@ -21,14 +21,14 @@ class SearchWidget extends StatelessWidget {
           },),     
     );
   }
-/*
+
   Widget _body(BuildContext context){
       return Padding(padding: const EdgeInsets.all(16),
         child: Column(
           children: [
               _createSearchTextField(context),
               SizedBox(height: 16,),
-              _createListView(context)
+              // _createListView(context)
           ]),
       );
   }
@@ -45,7 +45,7 @@ class SearchWidget extends StatelessWidget {
         ],
       );
   }
-
+/*
   /// Método responsável por criar a estrutura do listview no qual
   /// exibirá os dados do banco de dados  
   Widget _createListView(BuildContext context){
@@ -77,5 +77,5 @@ class SearchWidget extends StatelessWidget {
       );
 
   }
-  */
+*/
 }
