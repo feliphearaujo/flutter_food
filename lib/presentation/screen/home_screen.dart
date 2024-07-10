@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_food_express/presentation/screen/estado/estado_search_screen.dart';
+import 'package:flutter_food_express/presentation/screen/usuario/usuario_search_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   
@@ -37,10 +38,11 @@ class HomeScreen extends StatelessWidget {
             title: const Text("Usuário"),
             selected: _selectedIndex == 0,
             leading: const Icon( Icons.people ),
-            onTap: () {
+            onTap: () async{
                 //Fecha o menu
                 _selectedIndex = 0;                
                 Navigator.pop(context);
+                await Navigator.pushNamed(context, UsuarioSearchScreen.routName);
             },
         ),
         ListTile( 
