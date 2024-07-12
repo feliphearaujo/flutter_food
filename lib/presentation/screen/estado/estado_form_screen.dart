@@ -18,12 +18,34 @@ class _EstadoFormScreenState extends State<EstadoFormScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          IconButton(onPressed:(){}, icon: const Icon(Icons.check)),
+          IconButton(onPressed:(){ Navigator.pop(context); } , icon: const Icon(Icons.cancel))
+        ],
         title: const Text('Cadastro Estado'),
       ),
-      body: Container(),
+      body: _body(context),
     );
   }
 
+Widget _body(BuildContext context) {
+  
+  return Padding(padding: EdgeInsets.all(16),
+  // Para organizar os componentes verticalmente
+    child: Column(children: [
+      Row(children: [
+        Flexible(child: TextFormField(),)
+      ]),
+      const SizedBox(height: 16,),
+      Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+        Flexible(child: TextFormField()),
+        const SizedBox(width: 16),
+        Flexible(child: TextFormField()),
+      ],)
+    ]),
+  );
+
+}
   
 
 
